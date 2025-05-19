@@ -1,0 +1,10 @@
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+
+# OS metadata
+.DS_Store
+
+# Docker compose override files
+docker-compose.override.yml

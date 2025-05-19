@@ -1,0 +1,93 @@
+/* Navbar.css */
+/* Base Styles */
+.desktopNav, .mobileNav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.desktopNav {
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.desktopNav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.desktopNav ul li a {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.5rem 0;
+}
+
+.desktopNav ul li a:hover {
+  color: #4f46e5; /* Indigo-600 */
+}
+
+/* Mobile Toggle */
+.iconMobile {
+  display: none;
+  color: #333;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+.mobileNav {
+  display: none;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobileNav ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Active States */
+.mobileNavShow {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.mobileNavHide {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .desktopNav {
+    display: none;
+  }
+  
+  .iconMobile {
+    display: block;
+  }
+  
+  .mobileNav {
+    display: none;
+  }
+  
+  .mobileNavShow {
+    display: block;
+  }
+}

@@ -1,0 +1,15 @@
+FROM node:18
+
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+COPY tsconfig.json ./
+RUN npm install
+
+# No need to copy source code as we're using volumes
+
+EXPOSE 5000
+
+# Start in development mode
+CMD ["npm", "run", "dev"]
