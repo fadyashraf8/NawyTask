@@ -1,10 +1,15 @@
-1-download the code.zip
+Download the code.zip file
 
-2-extract the file and open it with vs code
+Extract the zip file and open the extracted folder with VS Code
 
-3-run docker desktop app
+Run Docker Desktop (make sure it's running before proceeding)
 
-3-in the root file NawyTask run docker-compose up
+Navigate to the root folder (NawyTask) in your terminal/command prompt
 
-4-front end http://localhost:3000/    back end http://localhost:5000/
+Run docker-compose up (this will build and start both frontend and backend containers)
 
+Access:
+
+Frontend: http://localhost:3000/
+
+Backend: http://localhost:5000/
