@@ -190,7 +190,13 @@ export default function Apartments() {
           {apartments.map(apartment => (
             <div
               key={apartment._id}
-              className="bg-white rounded-lg shadow overflow-hidden hover:shadow-md transition-shadow duration-200 d-flex justify-between "
+              className="bg-white rounded-lg shadow overflow-hidden hover:shadow-md transition-shadow duration-200 "
+                style={{
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    height: '100%' 
+  }}
             >
               <div className="bg-gray-100 w-full h-48 overflow-hidden">
                 <SliderImages images={apartment.images} />
